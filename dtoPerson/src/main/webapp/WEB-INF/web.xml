@@ -1,0 +1,17 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>M-JD2-XXX-XX</display-name>
+
+    <!--    <servlet>-->
+    <!--        <servlet-name>WorkingClassroom.controllers.HelloServlet</servlet-name>-->
+    <!--        <servlet-class>WorkingClassroom.controllers.HelloServlet</servlet-class>-->
+    <!--    </servlet>-->
+
+    <!--    <servlet-mapping>-->
+    <!--        <servlet-name>WorkingClassroom.controllers.HelloServlet</servlet-name>-->
+    <!--        <url-pattern>/tes</url-pattern>-->
+    <!--    </servlet-mapping>-->
+</web-app>
