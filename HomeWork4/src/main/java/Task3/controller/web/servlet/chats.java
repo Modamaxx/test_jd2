@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "chats", urlPatterns = "/chats")
+    @WebServlet(name = "chats", urlPatterns = "/chats")
 public class chats extends HttpServlet {
     private final WorkWithPerson workWithPerson;
     public chats() {

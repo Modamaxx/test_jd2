@@ -1,0 +1,14 @@
+service\api\ILetterService.class
+service\ValidationService.class
+service\api\IUserService.class
+controllers\web\servlets\SingUpServlet.class
+service\UserService.class
+storage\api\IUserStorage.class
+service\LetterService.class
+storage\MemoryUserStorage.class
+controllers\web\servlets\MessageServlet.class
+controllers\web\servlets\SingInServlet.class
+controllers\web\servlets\ChatsServlet.class
+service\api\IValidationService.class
+model\Letter.class
+model\User.class
