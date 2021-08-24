@@ -1,5 +1,6 @@
 package service;
 
+import model.AppParam;
 import model.Letter;
 import model.User;
 import service.api.ILetterService;
@@ -19,8 +20,8 @@ public class LetterService implements ILetterService {
     private final IUserStorage userStorage;
 
     private LetterService() {
-        letterStorage = FileLetterStorage.getInstance();
-        userStorage = FileUserStorage.getInstance();
+        letterStorage = AppParam.getInstance().getLetterStorage();
+        userStorage = AppParam.getInstance().getUserStorage();
     }
 
     @Override

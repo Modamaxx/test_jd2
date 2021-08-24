@@ -22,9 +22,10 @@ public class FileUserStorage implements IUserStorage {
     public User get(String login) {
 
         try {
-            FileInputStream fis = new FileInputStream("D:\\Java\\courses\\DZ\\Home\\HomeWork5\\src\\main\\resources\\UsersData.dat");
+            String file = "D:\\Java\\courses\\DZ\\Home\\HomeWork5\\src\\main\\resources\\UsersData.dat";
+            FileInputStream fis = new FileInputStream(file);
             ObjectInputStream ois = new ObjectInputStream(fis);
-            Map<String, User> us = (Map<String,User>) ois.readObject();
+            Map<String, User> us = (Map<String, User>) ois.readObject();
             ois.close();
             return us.get(login);
 
@@ -36,7 +37,7 @@ public class FileUserStorage implements IUserStorage {
 
     @Override
     public void add(User user) {
-      this.users.put(user.getLogin(),user);
+        this.users.put(user.getLogin(), user);
         try {
             FileOutputStream fos = new FileOutputStream("D:\\Java\\courses\\DZ\\Home\\HomeWork5\\src\\main\\resources\\UsersData.dat");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -50,6 +51,17 @@ public class FileUserStorage implements IUserStorage {
 
     @Override
     public Collection<User> getAll() {
+        try {
+            String file = "D:\\Java\\courses\\DZ\\Home\\HomeWork5\\src\\main\\resources\\UsersData.dat";
+            FileInputStream fis = new FileInputStream(file);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            Map<String, User> us = (Map<String, User>) ois.readObject();
+            ois.close();
+            return us.values();
+
+        } catch (ClassNotFoundException | IOException fileNotFoundException) {
+            fileNotFoundException.printStackTrace();
+        }
         return null;
     }
 

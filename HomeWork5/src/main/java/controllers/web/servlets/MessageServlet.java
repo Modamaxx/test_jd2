@@ -1,5 +1,6 @@
 package controllers.web.servlets;
 
+import model.AppParam;
 import model.User;
 import service.UserService;
 import service.api.IUserService;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+
 @WebServlet(name = "MessageServlet", urlPatterns = "/Message")
 
 public class MessageServlet extends HttpServlet {
@@ -24,9 +26,9 @@ public class MessageServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         HttpSession session = req.getSession();
-        User user = (User) session.getAttribute("person");
-        User user1= userService.get(user.getLogin());
-        req.setAttribute("letters", user1.getLetters());
+        String login = ((User) session.getAttribute("person")).getLogin();
+        User user = userService.get(login);
+        req.setAttribute("letters", user.getLetters());
         req.getRequestDispatcher("/views/message.jsp").forward(req, resp);
     }
 }

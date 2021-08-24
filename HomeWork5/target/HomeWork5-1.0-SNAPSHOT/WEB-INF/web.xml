@@ -5,13 +5,9 @@
          version="3.1">
     <display-name>M-JD2-XXX-XX</display-name>
 
-    <!--    <servlet>-->
-    <!--        <servlet-name>WorkingClassroom.controllers.HelloServlet</servlet-name>-->
-    <!--        <servlet-class>WorkingClassroom.controllers.HelloServlet</servlet-class>-->
-    <!--    </servlet>-->
+    <context-param>
+        <param-name>storage</param-name>
+        <param-value>FILE</param-value>
+    </context-param>
 
-    <!--    <servlet-mapping>-->
-    <!--        <servlet-name>WorkingClassroom.controllers.HelloServlet</servlet-name>-->
-    <!--        <url-pattern>/tes</url-pattern>-->
-    <!--    </servlet-mapping>-->
 </web-app>

@@ -29,7 +29,6 @@ public class ChatsServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("person");
 

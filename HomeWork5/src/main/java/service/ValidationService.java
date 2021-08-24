@@ -1,5 +1,6 @@
 package service;
 
+import model.AppParam;
 import model.User;
 import service.api.IValidationService;
 import storage.FileUserStorage;
@@ -11,7 +12,7 @@ public class ValidationService implements IValidationService {
     private final IUserStorage users;
 
     private ValidationService() {
-        this.users = FileUserStorage.getInstance();
+        this.users = AppParam.getInstance().getUserStorage();
     }
 
     @Override
