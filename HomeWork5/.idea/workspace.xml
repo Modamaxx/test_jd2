@@ -5,37 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d7bee41-c9fd-4ae1-97e6-616f18ae46a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/ChatsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/MessageServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/SingInServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/SingUpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Letter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/LetterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ValidationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/ILetterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/IValidationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/MemoryUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/api/IUserStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/chats.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/message.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/signIn.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/signUp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/startApp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork4/src/main/java/Task3/controller/web/servlet/chats.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork4/src/main/java/Task3/controller/web/servlet/chats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/AllUsersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/ChatsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/ChatsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/api/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/api/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/MemoryUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/MemoryUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/api/IUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/api/IUserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/servlets/ChatsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/servlets/ChatsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/WorkWithPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/api/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/api/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/MemoryUserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/MemoryUserStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/UserStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/api/IUserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/api/IUserStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/views/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/views/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/views/singIn.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/views/singUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/web/servlets/ChatsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/web/servlets/ChatsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/api/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/api/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/MemoryUserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/storage/MemoryUserStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/api/IUserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/storage/api/IUserStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +45,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -70,7 +78,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HomeWork4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">

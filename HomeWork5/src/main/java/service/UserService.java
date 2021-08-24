@@ -6,24 +6,23 @@ import service.api.IValidationService;
 import storage.MemoryUserStorage;
 import storage.api.IUserStorage;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import java.util.Collection;
 
 public class UserService implements IUserService {
     private static final UserService instance = new UserService();
 
     private final IValidationService validationService;
-    private final IUserStorage users;
+    private final IUserStorage userStorage;
 
     private UserService() {
         this.validationService = ValidationService.getInstance();
-        this.users= MemoryUserStorage.getInstance();
+        this.userStorage = MemoryUserStorage.getInstance();
     }
 
     @Override
     public boolean signUp(User user) {
         if(validationService.validSignUp(user)){
-            users.add(user);
+            userStorage.add(user);
             return true;
         }
         return false;
@@ -31,12 +30,11 @@ public class UserService implements IUserService {
 
     @Override
     public void get(String login) {
-
     }
 
     @Override
-    public void getAll() {
-
+    public Collection<User> getAll() {
+       return this.userStorage.getAll();
     }
     public static UserService getInstance() {
         return instance;

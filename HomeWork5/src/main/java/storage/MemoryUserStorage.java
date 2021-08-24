@@ -3,10 +3,7 @@ package storage;
 import model.User;
 import storage.api.IUserStorage;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MemoryUserStorage implements IUserStorage {
     private static final MemoryUserStorage instance = new MemoryUserStorage();
@@ -30,4 +27,11 @@ public class MemoryUserStorage implements IUserStorage {
      }
        this.users.put(user.getLogin(),user);
     }
+
+    @Override
+    public Collection<User> getAll() {
+     return this.users.values();
+    }
+
+
 }

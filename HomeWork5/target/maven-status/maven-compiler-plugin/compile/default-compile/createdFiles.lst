@@ -11,4 +11,5 @@ controllers\web\servlets\SingInServlet.class
 controllers\web\servlets\ChatsServlet.class
 service\api\IValidationService.class
 model\Letter.class
+controllers\web\servlets\AllUsersServlet.class
 model\User.class

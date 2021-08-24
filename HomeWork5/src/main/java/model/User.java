@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -9,6 +10,7 @@ public class User {
     private String fio;
     private String birthday;
     private ArrayList<Letter> letters;
+    private LocalDateTime DateTimeSignUp;
 
     public User(){
         letters= new ArrayList<Letter>();
@@ -71,5 +73,13 @@ public class User {
 
     public void setLetters(ArrayList<Letter> letters) {
         this.letters = letters;
+    }
+
+    public LocalDateTime getDateTimeSignUp() {
+        return DateTimeSignUp;
+    }
+
+    public void setDateTimeSignUp(LocalDateTime dateTimeSignUp) {
+        DateTimeSignUp = dateTimeSignUp;
     }
 }
