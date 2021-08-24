@@ -20,7 +20,7 @@
        </tr>
         <tr>
          <td Width="20%"> ${item.data}</td>
-         <td Width="20%"> ${item.user}</td>
+         <td Width="20%"> ${item.from}</td>
          <td Width="60%"> ${item.message}</td>
         </tr>
        </c:forEach>

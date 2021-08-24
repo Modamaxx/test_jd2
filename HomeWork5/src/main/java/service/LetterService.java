@@ -3,25 +3,41 @@ package service;
 import model.Letter;
 import model.User;
 import service.api.ILetterService;
+import storage.FileLetterStorage;
+import storage.FileUserStorage;
+import storage.MemoryLetterStorage;
 import storage.MemoryUserStorage;
+import storage.api.ILetterStorage;
 import storage.api.IUserStorage;
 
-import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class LetterService implements ILetterService {
-    private static final LetterService instance= new LetterService();
-    private final IUserStorage users;
+    private static final LetterService instance = new LetterService();
+    private final ILetterStorage letterStorage;
+    private final IUserStorage userStorage;
 
     private LetterService() {
-        this.users= MemoryUserStorage.getInstance();
+        letterStorage = FileLetterStorage.getInstance();
+        userStorage = FileUserStorage.getInstance();
     }
 
-    public void addLetter(String recipient, String message,String from){
-       User user= users.get(recipient);
-       user.getLetters().add(new Letter(LocalDate.now().toString(), from,message));
+    @Override
+    public void addLetter(String recipient, String message, String from) {
+
+
+        Letter letter = new Letter();
+        letter.setData(LocalDateTime.now().toString());
+        letter.setFrom(from);
+        letter.setMessage(message);
+
+        User user = userStorage.get(recipient);
+        letterStorage.addLetter(letter,user);
+
     }
-    public static LetterService getInstance(){
+
+    public static LetterService getInstance() {
         return instance;
     }
 }

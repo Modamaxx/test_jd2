@@ -1,8 +1,10 @@
 package service;
 
+import model.Letter;
 import model.User;
 import service.api.IUserService;
 import service.api.IValidationService;
+import storage.FileUserStorage;
 import storage.MemoryUserStorage;
 import storage.api.IUserStorage;
 
@@ -16,7 +18,7 @@ public class UserService implements IUserService {
 
     private UserService() {
         this.validationService = ValidationService.getInstance();
-        this.userStorage = MemoryUserStorage.getInstance();
+        this.userStorage = FileUserStorage.getInstance();
     }
 
     @Override
@@ -29,13 +31,17 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public void get(String login) {
+    public User get(String login) {
+       return userStorage.get(login);
     }
 
     @Override
     public Collection<User> getAll() {
        return this.userStorage.getAll();
     }
+
+
+
     public static UserService getInstance() {
         return instance;
     }

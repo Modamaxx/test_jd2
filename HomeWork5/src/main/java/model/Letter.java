@@ -1,13 +1,15 @@
 package model;
 
-public class Letter {
+import java.io.Serializable;
+
+public class Letter implements Serializable {
     private    String data;
-    private    String user;
+    private    String from;
     private    String message;
 
     public Letter(String data, String user, String message) {
         this.data = data;
-        this.user = user;
+        this.from = user;
         this.message = message;
     }
     public Letter(){}
@@ -21,12 +23,12 @@ public class Letter {
         this.data = data;
     }
 
-    public String getUser() {
-        return user;
+    public String getFrom() {
+        return from;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
     public String getMessage() {

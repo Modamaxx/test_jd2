@@ -25,8 +25,8 @@ public class MessageServlet extends HttpServlet {
 
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("person");
-
-        req.setAttribute("letters", user.getLetters());
+        User user1= userService.get(user.getLogin());
+        req.setAttribute("letters", user1.getLetters());
         req.getRequestDispatcher("/views/message.jsp").forward(req, resp);
     }
 }

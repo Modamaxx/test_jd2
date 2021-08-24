@@ -2,9 +2,9 @@ package controllers.web.servlets;
 
 import model.User;
 import service.LetterService;
-import service.UserService;
 import service.api.ILetterService;
-import service.api.IUserService;
+import storage.MemoryLetterStorage;
+import storage.api.ILetterStorage;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 @WebServlet(name = "ChatsServlet", urlPatterns = "/chats")
 public class ChatsServlet extends HttpServlet {
