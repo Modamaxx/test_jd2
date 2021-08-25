@@ -18,5 +18,6 @@ controllers\web\servlets\SingUpServlet.class
 storage\api\IUserStorage.class
 service\LetterService.class
 service\api\IValidationService.class
+controllers\web\servlets\AboutServlet.class
 storage\MemoryLetterStorage.class
 service\api\ETypeStorage.class

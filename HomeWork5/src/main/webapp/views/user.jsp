@@ -18,11 +18,13 @@
            <th>Login</th>
            <th>fio</th>
            <th>birthday</th>
+           <th>Registration time</th>
        </tr>
         <tr>
          <td Width="20%"> ${item.login}</td>
          <td Width="20%"> ${item.fio}</td>
          <td Width="20%"> ${item.birthday}</td>
+         <td Width="20%"> ${item.dateTimeSignUp}</td>
         </tr>
        </c:forEach>
 

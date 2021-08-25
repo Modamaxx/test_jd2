@@ -14,15 +14,23 @@
         </p>
 
         <p>
-          <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/chats' ;" value ="Send messages"></input></p>
+             <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/chats' ;" value ="Send messages"></input></p>
         </p>
 
         <p>
              <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/user' ;" value ="Data about all users"></input></p>
         </p>
 
-           <p>
-                   <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/views/startApp.jsp' ;" value ="Exit"></input></p>
-                </p>
+         <p>
+                      <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/about' ;" value ="Application start time"></input></p>
+         </p>
+
+
+
+         <p>
+              <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/views/startApp.jsp' ;" value ="Exit"></input></p>
+        </p>
+
+
 </body>
 </html>

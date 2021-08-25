@@ -5,34 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d7bee41-c9fd-4ae1-97e6-616f18ae46a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/listeners/StartListeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/AppParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/ETypeStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/AboutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/about.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/ChatsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/ChatsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/MessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/MessageServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/SingUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/web/servlets/SingUpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/LetterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LetterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ValidationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/FileUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/FileUserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/UsersData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/UsersData.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/UsersData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/UsersData.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/servlets/ChatsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/servlets/ChatsServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/servlets/SingUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/servlets/SingUpServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/LetterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/LetterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/ValidationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/service/ValidationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/FileUserStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/storage/FileUserStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/views/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork5-1.0-SNAPSHOT/views/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/UsersData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UsersData.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/web/servlets/ChatsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/web/servlets/ChatsServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/web/servlets/SingUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/web/servlets/SingUpServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/LetterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/LetterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ValidationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/ValidationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />

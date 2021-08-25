@@ -11,18 +11,19 @@ public class User implements Serializable {
     private String fio;
     private String birthday;
     private ArrayList<Letter> letters;
-    private LocalDateTime DateTimeSignUp;
+    private LocalDateTime dateTimeSignUp;
 
     public User(){
         letters= new ArrayList<Letter>();
     }
 
-    public User(String login, String password, String fio, String birthday) {
+    public User(String login, String password, String fio, String birthday,LocalDateTime dateTimeSignUp) {
         this.login = login;
         this.password = password;
         this.fio = fio;
         this.birthday = birthday;
         this.letters = new ArrayList<Letter>();
+        this.dateTimeSignUp=dateTimeSignUp;
     }
 
     public String getLogin() {
@@ -77,10 +78,10 @@ public class User implements Serializable {
     }
 
     public LocalDateTime getDateTimeSignUp() {
-        return DateTimeSignUp;
+        return dateTimeSignUp;
     }
 
     public void setDateTimeSignUp(LocalDateTime dateTimeSignUp) {
-        DateTimeSignUp = dateTimeSignUp;
+        dateTimeSignUp = dateTimeSignUp;
     }
 }

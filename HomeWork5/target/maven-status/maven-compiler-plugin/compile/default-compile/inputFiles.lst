@@ -14,6 +14,7 @@ D:\Java\courses\DZ\Home\HomeWork5\src\main\java\storage\MemoryUserStorage.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\controllers\web\servlets\AllUsersServlet.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\service\api\ETypeStorage.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\storage\api\IUserStorage.java
+D:\Java\courses\DZ\Home\HomeWork5\src\main\java\controllers\web\servlets\AboutServlet.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\model\AppParam.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\controllers\web\listeners\StartListeners.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\controllers\web\servlets\SingInServlet.java
