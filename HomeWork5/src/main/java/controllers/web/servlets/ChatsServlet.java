@@ -35,7 +35,10 @@ public class ChatsServlet extends HttpServlet {
         String recipient=req.getParameter("recipient");
         String message= req.getParameter("message");
 
-        letterService.addLetter(recipient, message, user.getLogin());
+       if(!letterService.addLetter(recipient, message, user.getLogin())){
+           req.setAttribute("error", "the data is specified incorrectly");
+           req.getRequestDispatcher("/views/chats.jsp").forward(req, resp);
+       }
 
         String path = req.getContextPath() + "/views/menu.jsp";
         resp.sendRedirect(path);

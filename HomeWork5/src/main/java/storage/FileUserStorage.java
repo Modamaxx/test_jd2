@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class FileUserStorage implements IUserStorage {
     private static final FileUserStorage instance = new FileUserStorage();
-    private final Map<String, User> users = new HashMap<>();
+    private Map<String, User> users = new HashMap<>();
 
     private FileUserStorage() {
 
@@ -65,27 +65,19 @@ public class FileUserStorage implements IUserStorage {
         return null;
     }
 
+    public void init() {
+
+        try {
+            String file = "D:\\Java\\courses\\DZ\\Home\\HomeWork5\\src\\main\\resources\\UsersData.dat";
+            FileInputStream fis = new FileInputStream(file);
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            this.users = (Map<String, User>) ois.readObject();
+        } catch (ClassNotFoundException | IOException fileNotFoundException) {
+            fileNotFoundException.printStackTrace();
+        }
+    }
+
     public static FileUserStorage getInstance() {
         return instance;
     }
 }
-
-// try(FileWriter writer = new FileWriter("D:\\Java\\courses\\DZ\\Home\\HomeWork5\\src\\main\\resources\\UsersTxt.txt", true))
-//        {
-//            // запись всей строки
-//            writer.write(user.getLogin());
-//            writer.append(' ');
-//            writer.write(user.getPassword());
-//            writer.append(' ');
-//            writer.write(user.getFio());
-//            writer.append(' ');
-//            writer.write(user.getBirthday());
-//            writer.append('\n');
-//
-//
-//            writer.flush();
-//        }
-//        catch(IOException ex){
-//
-//            System.out.println(ex.getMessage());
-//        }

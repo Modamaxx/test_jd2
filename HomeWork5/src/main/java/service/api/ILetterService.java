@@ -1,5 +1,5 @@
 package service.api;
 
 public interface ILetterService  {
-    void addLetter(String data,String from,String message);
+    boolean addLetter(String data,String from,String message);
 }

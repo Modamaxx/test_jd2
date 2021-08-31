@@ -25,26 +25,19 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public boolean signUp(User user) {
-
-        if(validationService.validSignUp(user)){
-            userStorage.add(user);
-            return true;
-        }
-        return false;
+    public void addUser(User user) {
+        userStorage.add(user);
     }
 
     @Override
-    public User get(String login) {
-       return userStorage.get(login);
+    public User getUser(String login) {
+        return userStorage.get(login);
     }
 
     @Override
     public Collection<User> getAll() {
-       return this.userStorage.getAll();
+        return this.userStorage.getAll();
     }
-
-
 
     public static UserService getInstance() {
         return instance;

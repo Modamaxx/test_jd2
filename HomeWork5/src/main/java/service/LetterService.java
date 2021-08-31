@@ -25,7 +25,7 @@ public class LetterService implements ILetterService {
     }
 
     @Override
-    public void addLetter(String recipient, String message, String from) {
+    public boolean addLetter(String recipient, String message, String from) {
 
 
         Letter letter = new Letter();
@@ -34,7 +34,10 @@ public class LetterService implements ILetterService {
         letter.setMessage(message);
 
         User user = userStorage.get(recipient);
+        if(user==null)
+            return false;
         letterStorage.addLetter(letter,user);
+        return true;
 
     }
 

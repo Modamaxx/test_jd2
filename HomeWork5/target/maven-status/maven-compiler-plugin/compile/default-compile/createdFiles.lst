@@ -21,3 +21,4 @@ service\api\IValidationService.class
 controllers\web\servlets\AboutServlet.class
 storage\MemoryLetterStorage.class
 service\api\ETypeStorage.class
+controllers\web\servlets\LogoutServlet.class

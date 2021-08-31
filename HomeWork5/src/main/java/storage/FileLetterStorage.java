@@ -25,7 +25,6 @@ public class FileLetterStorage implements ILetterStorage {
         user.getLetters().add(letter);
         userStorage.add(user);
 
-
     }
     public static FileLetterStorage getInstance(){
         return instance;

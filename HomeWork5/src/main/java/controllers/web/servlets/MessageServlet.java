@@ -1,6 +1,5 @@
 package controllers.web.servlets;
 
-import model.AppParam;
 import model.User;
 import service.UserService;
 import service.api.IUserService;
@@ -27,7 +26,7 @@ public class MessageServlet extends HttpServlet {
 
         HttpSession session = req.getSession();
         String login = ((User) session.getAttribute("person")).getLogin();
-        User user = userService.get(login);
+        User user = userService.getUser(login);
         req.setAttribute("letters", user.getLetters());
         req.getRequestDispatcher("/views/message.jsp").forward(req, resp);
     }

@@ -3,6 +3,7 @@ D:\Java\courses\DZ\Home\HomeWork5\src\main\java\storage\api\ILetterStorage.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\storage\FileUserStorage.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\service\ValidationService.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\model\Letter.java
+D:\Java\courses\DZ\Home\HomeWork5\src\main\java\controllers\web\servlets\LogoutServlet.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\service\LetterService.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\service\UserService.java
 D:\Java\courses\DZ\Home\HomeWork5\src\main\java\service\api\IUserService.java

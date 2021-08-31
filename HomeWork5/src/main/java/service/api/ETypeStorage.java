@@ -18,7 +18,6 @@ public enum ETypeStorage {
         this.userStorage=userStorage;
         this.letterStorage=letterStorage;
     }
-
     public static ETypeStorage valueOfIgnoreCase(String name){
         for (ETypeStorage value : values()) {
             if(value.name().equalsIgnoreCase(name)){
@@ -27,8 +26,6 @@ public enum ETypeStorage {
         }
         throw new IllegalArgumentException("Неизвесный тип хранилища");
     }
-
-
 
     public  IUserStorage getUserStorage(){
         return userStorage;

@@ -5,8 +5,8 @@ import model.User;
 import java.util.Collection;
 
 public interface IUserService {
-  boolean signUp(User user);
-  User get(String login);
+  void addUser(User user);
+  User getUser(String login);
   Collection<User> getAll();
 
 }

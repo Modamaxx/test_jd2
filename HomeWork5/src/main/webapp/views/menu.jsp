@@ -28,7 +28,7 @@
 
 
          <p>
-              <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/views/startApp.jsp' ;" value ="Exit"></input></p>
+              <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork5-1.0-SNAPSHOT/logout' ;" value ="Exit"></input></p>
         </p>
 
 
