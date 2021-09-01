@@ -3,6 +3,7 @@ package controllers.web.listeners;
 import model.AppParam;
 import service.UserService;
 import service.api.ETypeStorage;
+import storage.FileUserStorage;
 import storage.api.ILetterStorage;
 import storage.api.IUserStorage;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 
 @WebListener
 public class StartListeners implements ServletContextListener {
+    private final String TYPE_STORAGE_CONSTANT = "FILE";
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -21,6 +23,10 @@ public class StartListeners implements ServletContextListener {
         AppParam.getInstance().setStartTime(LocalDateTime.now());
         AppParam.getInstance().setUserStorage(storageType.getUserStorage());
         AppParam.getInstance().setLetterStorage(storageType.getLetterStorage());
+
+        if (typeStorage.equals(TYPE_STORAGE_CONSTANT)) {
+            FileUserStorage.getInstance().init();
+        }
     }
 
     @Override

@@ -24,7 +24,7 @@ public class SingUpServlet extends HttpServlet {
     public SingUpServlet() {
 
         this.userService = UserService.getInstance();
-        this.validationService= ValidationService.getInstance();
+        this.validationService = ValidationService.getInstance();
 
     }
 
@@ -41,7 +41,7 @@ public class SingUpServlet extends HttpServlet {
         String fio = req.getParameter("fio");
         String birthday = req.getParameter("birthday");
         User user = new User(login, password, fio, birthday, LocalDateTime.now());
-        if(validationService.validSignUp(user)) {
+        if (validationService.validSignUp(user)) {
             userService.addUser(user);
 
             HttpSession session = req.getSession();
@@ -49,8 +49,7 @@ public class SingUpServlet extends HttpServlet {
 
             req.setAttribute("person", user);
             req.getRequestDispatcher("/views/menu.jsp").forward(req, resp);
-        }
-        else {
+        } else {
             req.setAttribute("error", "you have not entered all the data or this username is already occupied");
             req.getRequestDispatcher("/views/signUp.jsp").forward(req, resp);
         }
