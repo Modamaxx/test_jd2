@@ -16,6 +16,9 @@ import java.time.LocalDateTime;
 public class StartListeners implements ServletContextListener {
     private final String TYPE_STORAGE_CONSTANT = "FILE";
 
+    public StartListeners() {
+    }
+
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         String typeStorage = sce.getServletContext().getInitParameter("storage");

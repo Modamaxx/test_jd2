@@ -22,10 +22,8 @@ public class SingUpServlet extends HttpServlet {
 
 
     public SingUpServlet() {
-
         this.userService = UserService.getInstance();
         this.validationService = ValidationService.getInstance();
-
     }
 
     @Override
@@ -50,8 +48,8 @@ public class SingUpServlet extends HttpServlet {
             req.setAttribute("person", user);
             req.getRequestDispatcher("/views/menu.jsp").forward(req, resp);
         } else {
-            req.setAttribute("error", "you have not entered all the data or this username is already occupied");
-            req.getRequestDispatcher("/views/signUp.jsp").forward(req, resp);
+                req.setAttribute("error", "you have not entered all the data or this username is already occupied");
+                req.getRequestDispatcher("/views/signUp.jsp").forward(req, resp);
         }
 
     }

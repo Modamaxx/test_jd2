@@ -1,0 +1,15 @@
+storage\DBStorage.class
+service\UserService.class
+model\Department.class
+controllers\servlets\SignInServlet.class
+model\Position.class
+controllers\servlets\SignUpServlet.class
+controllers\servlets\CardEmployersServlet.class
+controllers\servlets\GeneratingEmployerServlet.class
+controllers\servlets\GeneratingPositionServlet.class
+controllers\servlets\GeneratingDepartmentServlet.class
+model\Employer.class
+service\GenerationDataDBService.class
+controllers\servlets\CardPositionServlet.class
+service\CalculationsService.class
+service\CardService.class

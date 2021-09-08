@@ -1,0 +1,90 @@
+-- Table: application.departments
+
+-- DROP TABLE application.departments;
+
+CREATE TABLE IF NOT EXISTS application.departments
+(
+    id bigint NOT NULL DEFAULT nextval('application.departments_id_seq'::regclass),
+    name text COLLATE pg_catalog."default",
+    parent bigint,
+    CONSTRAINT departments_pkey PRIMARY KEY (id),
+    CONSTRAINT "departments_FK" FOREIGN KEY (parent)
+        REFERENCES application.departments (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE application.departments
+    OWNER to postgres;
+-- Index: fki_departments_FK
+
+-- DROP INDEX application."fki_departments_FK";
+
+CREATE INDEX "fki_departments_FK"
+    ON application.departments USING btree
+    (parent ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+-- Table: application.employers
+
+-- DROP TABLE application.employers;
+
+CREATE TABLE IF NOT EXISTS application.employers
+(
+    id bigint NOT NULL DEFAULT nextval('application.employers_id_seq'::regclass),
+    name text COLLATE pg_catalog."default",
+    salary numeric,
+    "position" bigint,
+    department bigint,
+    CONSTRAINT employers_pkey PRIMARY KEY (id),
+    CONSTRAINT department FOREIGN KEY (department)
+        REFERENCES application.departments (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID,
+    CONSTRAINT "positionFK" FOREIGN KEY ("position")
+        REFERENCES application.positions (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE application.employers
+    OWNER to postgres;
+-- Index: fki_department
+
+-- DROP INDEX application.fki_department;
+
+CREATE INDEX fki_department
+    ON application.employers USING btree
+    (department ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: fki_positionFK
+
+-- DROP INDEX application."fki_positionFK";
+
+CREATE INDEX "fki_positionFK"
+    ON application.employers USING btree
+    ("position" ASC NULLS LAST)
+    TABLESPACE pg_default;
+
+-- Table: application.positions
+
+-- DROP TABLE application.positions;
+
+CREATE TABLE IF NOT EXISTS application.positions
+(
+    id bigint NOT NULL DEFAULT nextval('application."Positions_id_seq"'::regclass),
+    name text COLLATE pg_catalog."default",
+    CONSTRAINT "Positions_pkey" PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE application.positions
+    OWNER to postgres;

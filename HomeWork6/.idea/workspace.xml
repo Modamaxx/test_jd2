@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61001add-e35b-45a9-9b73-dc66ed588eec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DDL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWork6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/CardEmployersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/CardPositionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/GeneratingDepartmentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/GeneratingEmployerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/GeneratingPositionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignInServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignUpServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Employer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/CardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/GenerationDataDBService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/storage/DBStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Departments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Employers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Position.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/cardAllEmployer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/cardPosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/cardUser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/signIn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/signUp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/startApp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Departments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Position.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/GeneratingDepartments.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/GeneratingPositionServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignInServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignUpServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Employer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Position.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/GenerationDataDBService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/DBStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/checker-qual-3.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/postgresql-42.2.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardUser.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signIn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signUp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/startApp.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Departments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Position.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/GeneratingPositionServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/SignUpServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Employer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Position.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/GenerationDataDBService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/storage/DBStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/src/main/java/controllers/web/listeners/StartListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/src/main/java/controllers/web/listeners/StartListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/src/main/java/controllers/web/servlets/SingUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/src/main/java/controllers/web/servlets/SingUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/src/main/java/model/AppParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/src/main/java/model/AppParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/UsersData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/UsersData.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/listeners/StartListeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/controllers/web/listeners/StartListeners.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/model/AppParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/HomeWork5-1.0-SNAPSHOT/WEB-INF/classes/model/AppParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/classes/UsersData.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/classes/UsersData.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/classes/controllers/web/listeners/StartListeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/classes/controllers/web/listeners/StartListeners.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/classes/model/AppParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/classes/model/AppParam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork5/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../maven/apache-maven-3.8.1" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1xirkb01Dl3c8ZBtCVaYv83cJ0E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\courses\DZ\Home\HomeWork6\src\main" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
+      <module name="HomeWork6" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61001add-e35b-45a9-9b73-dc66ed588eec" name="Default Changelist" comment="" />
+      <created>1630848895424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630848895424</updated>
+    </task>
+    <servers />
+  </component>
+</project>

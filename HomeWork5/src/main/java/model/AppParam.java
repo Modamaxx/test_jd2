@@ -7,7 +7,7 @@ import storage.api.IUserStorage;
 import java.time.LocalDateTime;
 
 public class AppParam {
-    private static AppParam instance=instance=new AppParam();;
+    private static AppParam instance=new AppParam();;
     private IUserStorage userStorage;
     private ILetterStorage letterStorage;
     private LocalDateTime startTime;
