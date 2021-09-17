@@ -12,8 +12,10 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_19.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/DepartmentServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/EmployerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/PositionServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/TestServlet.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/EmployerService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/service/PositionService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/storage/ConnectionStorage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/storage/DepartmentStorage.java" afterDir="false" />
@@ -24,12 +26,44 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pageDepartment.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pageEmployer.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/views/test/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/DepartmentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/EmployerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/PositionServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/TestServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/DepartmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/EmployerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/ConnectionStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/DepartmentStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/EmployerStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/PositionStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/c3p0-0.9.5.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.12.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardDepartment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardPosition.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageDepartment.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/test/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/DepartmentServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/EmployerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/PositionServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/TestServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/DepartmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/EmployerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/service/PositionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/storage/ConnectionStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/storage/DepartmentStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/storage/EmployerStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/storage/PositionStorage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/CardEmployersServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/CardPositionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/PositionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/CardPositionServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/GeneratingDepartmentServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/GeneratingEmployerServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/GeneratingPositionServlet.java" beforeDir="false" />
@@ -41,11 +75,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CardService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/GenerationDataDBService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/DBStorage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/cardAllEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/test/cardAllEmployerTest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pagePosition.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/cardAllEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/test/cardAllEmployerTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pagePosition.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/cardUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/card/cardEmployer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/signIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/signIn.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/signUp.jsp" afterDir="false" />
@@ -68,9 +102,9 @@
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/UserService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/DBStorage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardAllEmployer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardPosition.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardAllEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/test/cardAllEmployerTest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pagePosition.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/cardUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signIn.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/startApp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/startApp.jsp" afterDir="false" />
@@ -79,11 +113,11 @@
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/GeneratingDepartmentServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/GeneratingEmployerServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/GeneratingPositionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/SignUpServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Employer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Employer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Employer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Position.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/CalculationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/CalculationsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/CardService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/GenerationDataDBService.class" beforeDir="false" />
