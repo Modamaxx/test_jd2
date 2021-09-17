@@ -2,7 +2,7 @@ package controllers.servlets;
 
 
 import model.Employer;
-import service.UserService;
+import service.EmployerService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,25 +13,23 @@ import java.io.IOException;
 
 @WebServlet(name = "SignInServlet", urlPatterns = "/signIn")
 public class SignInServlet extends HttpServlet {
-    private final UserService userService;
+    private final EmployerService employerService;
 
     public SignInServlet() {
-        this.userService = UserService.getInstance();
+        this.employerService = EmployerService.getInstance();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if(req.getParameter("id")!=null){
+            String id = req.getParameter("id");
+            Employer employer = employerService.get(Integer.parseInt(id));
+            employer.setId(Integer.parseInt(id));
+            req.setAttribute("employer", (employer));
+            req.getRequestDispatcher("views/card/cardEmployer.jsp").forward(req, resp);
+        }
+
         req.getRequestDispatcher("/views/signIn.jsp").forward(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String id = req.getParameter("id");
-        Employer employer = userService.get(Integer.parseInt(id));
-
-        req.setAttribute("employer", (employer));
-        req.getRequestDispatcher("views/cardUser.jsp").forward(req, resp);
-
     }
 }
 

@@ -1,6 +1,7 @@
 package model;
 
 public class Employer {
+    private int id;
     private String name;
     private Double salary;
     private Department department;
@@ -14,6 +15,14 @@ public class Employer {
     }
     public Employer(){}
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

@@ -9,8 +9,10 @@
             String id =(String)request.getAttribute("id");
             %>
              <c:if test="${id!=null}">
-                 <%   out.println("Remember this is your ID number="+id+"!!!!!!!") ;%>
+                 <%   out.println("Remember this is your ID number="+id+"") ;%>
              </c:if>
+
+
 
                <p>Complete the registration process</p>
                <form method="POST">
@@ -26,13 +28,21 @@
                     <td><input type="salary" name="salary"></td>
                 </tr>
                  <tr>
-                      <td> Department name:</td>
-                      <td><input type="text" name="departmentName"></td>
+                     Department name:
+                      <select name="departmentName">
+                         <c:forEach items="${strDepartments}" var="item" >
+                            <option> ${item} </option>
+                         </c:forEach>
+                      </select>
                  </tr>
 
                  <tr>
-                      <td>Position name:</td>
-                      <td><input type="text" name="positionName"></td>
+                     Position name:
+                     <select name="positionName">
+                       <c:forEach items="${strPositions}" var="item" >
+                             <option> ${item} </option>
+                        </c:forEach>
+                     </select>
                  </tr>
 
                    <p><input type="submit" value="Sign up"> </input></p>

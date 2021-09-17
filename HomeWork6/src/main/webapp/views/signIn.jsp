@@ -13,7 +13,7 @@
          <% out.println(error); %>
     </c:if>
    <p>Enter all the necessary data</p>
-   <form  method="POST">
+   <form  method="GET">
 
  <table>
      <tr>
