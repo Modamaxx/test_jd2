@@ -38,18 +38,15 @@ public class EmployerService {
     public Employer get(int id) {
         return employerStorage.get(id);
     }
-    public List<Employer> pageEmployer(){
-        return employerStorage.employerCard();
+    public List<Employer> pageEmployer(String pageNumber,String countEmployer){
+
+        return employerStorage.employerPage(Integer.parseInt(pageNumber),countEmployer);
     }
 
     public void generationEmployers() throws IOException {
         int [] arrDepartment=calculationsService.Department();
         int [] arrPosition=calculationsService.Position();
         employerStorage.generationEmployers(arrDepartment,arrPosition);
-    }
-
-    public List<Employer> employerCardTest(int pageNumber){
-        return   employerStorage.employerCardTest(pageNumber);
     }
 
     public static EmployerService getInstance() {

@@ -69,7 +69,7 @@ public class DepartmentStorage {
     public List<Department> pageDepartment() {
         String sql = "Select d1.id,d1.name,d2.name\n" +
                 "from application.departments d1\n" +
-                "join application.departments d2 on d1.parent=d2.id";
+                " left join application.departments d2 on d1.parent=d2.id";
         try (Connection con = ConnectionStorage.getInstance();
              Statement statement = con.createStatement();
              ResultSet resultSet = statement.executeQuery(sql);) {

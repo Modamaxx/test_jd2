@@ -1,6 +1,7 @@
 package service;
 
 import storage.DepartmentStorage;
+import storage.EmployerStorage;
 import storage.PositionStorage;
 
 import java.io.IOException;
@@ -14,10 +15,12 @@ public class CalculationsService {
     private static final CalculationsService instance = new CalculationsService();
     private final DepartmentStorage departmentStorage;
     private final PositionStorage positionStorage;
+    private final EmployerStorage employerStorage;
 
     public CalculationsService() {
         this.departmentStorage = DepartmentStorage.getInstance();
         this.positionStorage = PositionStorage.getInstance();
+        this.employerStorage=EmployerStorage.getInstance();
     }
 
     public int[] Department() throws IOException {
@@ -39,6 +42,11 @@ public class CalculationsService {
             arr[i] = positionStorage.getIdName(scanner.next());
         }
         return arr;
+    }
+
+    public String pageCount(){
+          int countEmployers= employerStorage.countEmployer();
+          return String.valueOf((long) Math.ceil((double) countEmployers/50));
     }
 
     public static CalculationsService getInstance() {
