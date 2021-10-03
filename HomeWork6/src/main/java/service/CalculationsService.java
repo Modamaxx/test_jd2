@@ -44,9 +44,9 @@ public class CalculationsService {
         return arr;
     }
 
-    public String pageCount(){
+    public String pageCount(double limit){
           int countEmployers= employerStorage.countEmployer();
-          return String.valueOf((long) Math.ceil((double) countEmployers/50));
+          return String.valueOf((long) Math.ceil((double) countEmployers/limit));
     }
 
     public static CalculationsService getInstance() {

@@ -1,8 +1,17 @@
 package model;
 
-public class Department {
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table(name="departments")
+public class Department implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column
     private String name;
+    @Column
     private String parent;
 
     public Department(String name){

@@ -1,16 +1,27 @@
 package model;
 
-public class Position {
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table(name="positions")
+public class Position implements Serializable {
+    @Id
+    @GeneratedValue
     private int id;
+    @Column
     private String name;
+
     public Position(String name) {
         this.name = name;
     }
-    public Position(int id,String name) {
+
+    public Position(int id, String name) {
         this.name = name;
-        this.id=id;
+        this.id = id;
     }
-    public Position(){
+
+    public Position() {
 
     }
 

@@ -3,7 +3,13 @@ package storage;
 import model.Department;
 import model.Employer;
 import model.Position;
+import model.dto.EmployerQuery;
+import org.hibernate.Session;
+import org.hibernate.query.Query;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -78,7 +84,7 @@ public class EmployerStorage {
 
                 for (int i = 0; i < 10_000; i++) {
                     preparedStatement.setString(1, scannerName.next());
-                    preparedStatement.setDouble(2, Math.random());
+                    preparedStatement.setDouble(2, Math.random() * 100);
                     preparedStatement.setInt(3, arrPosition[(int) (Math.random() * (10))]);
                     preparedStatement.setInt(4, arrDepartment[(int) (Math.random() * (5))]);
                     preparedStatement.addBatch();
@@ -95,7 +101,7 @@ public class EmployerStorage {
         }
     }
 
-    public List<Employer> employerPage(int pageNumber,String countEmployer) {
+    public List<Employer> employerPage(int pageNumber, String countEmployer) {
         String sql = "SELECT employers.id,employers.name,employers.salary,\n" +
                 "                departments.name as department,\n" +
                 "                positions.name as positions \n" +
@@ -107,7 +113,7 @@ public class EmployerStorage {
              PreparedStatement statement = con.prepareStatement(sql);) {
 
             statement.setLong(1, Long.parseLong(countEmployer));
-            statement.setLong(2, Long.parseLong(countEmployer)* (pageNumber-1));
+            statement.setLong(2, Long.parseLong(countEmployer) * (pageNumber - 1));
             List<Employer> list = new LinkedList<>();
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
@@ -144,6 +150,74 @@ public class EmployerStorage {
         } catch (SQLException e) {
             throw new IllegalStateException("Ошибка работы с базой данных", e);
         }
+    }
+
+    public List<Employer> find(EmployerQuery employerQuery) {
+        Session sessionOne = HibernateUtil.getSessionFactory().openSession();
+        CriteriaBuilder criteriaBuilder = HibernateUtil.getSessionFactory().createEntityManager().getCriteriaBuilder();
+        CriteriaQuery<Employer> criteriaQuery = criteriaBuilder.createQuery(Employer.class);
+
+        Root<Employer> itemRoot = criteriaQuery.from(Employer.class);
+        criteriaQuery.where(
+                criteriaBuilder.and(
+                        criteriaBuilder.equal(itemRoot.get("name"), employerQuery.getName())
+                )
+        );
+
+        Query<Employer> query= sessionOne.createQuery(criteriaQuery);
+        query.setFirstResult(employerQuery.getLimit()*(employerQuery.getNumberPage()-1));
+        query.setMaxResults(employerQuery.getLimit());
+
+        return query.getResultList();
+    }
+
+    public List<Employer> salary(EmployerQuery employerQuery) {
+
+        Session sessionOne = HibernateUtil.getSessionFactory().openSession();
+        CriteriaBuilder criteriaBuilder = HibernateUtil.getSessionFactory().createEntityManager().getCriteriaBuilder();
+        CriteriaQuery<Employer> criteriaQuery = criteriaBuilder.createQuery(Employer.class);
+
+        Root<Employer> itemRoot = criteriaQuery.from(Employer.class);
+        if (employerQuery.getSort().equals("ascending")) {
+            criteriaQuery.where(
+                    criteriaBuilder.and(
+                            criteriaBuilder.lessThan(itemRoot.get("salary"), employerQuery.getSalary())
+                    )
+            );
+        } else {
+            criteriaQuery.where(
+                    criteriaBuilder.and(
+                            criteriaBuilder.greaterThan(itemRoot.get("salary"), employerQuery.getSalary())
+                    )
+            );
+        }
+
+
+        Query<Employer> query= sessionOne.createQuery(criteriaQuery);
+        query.setFirstResult(employerQuery.getLimit()*(employerQuery.getNumberPage()-1));
+        query.setMaxResults(employerQuery.getLimit());
+
+        return query.getResultList();
+    }
+
+    public List<Employer> findAndSalary(EmployerQuery employerQuery) {
+        Session sessionOne = HibernateUtil.getSessionFactory().openSession();
+        CriteriaBuilder criteriaBuilder = HibernateUtil.getSessionFactory().createEntityManager().getCriteriaBuilder();
+        CriteriaQuery<Employer> criteriaQuery = criteriaBuilder.createQuery(Employer.class);
+
+        Root<Employer> itemRoot = criteriaQuery.from(Employer.class);
+
+        criteriaQuery.where(
+                criteriaBuilder.and(
+                        criteriaBuilder.lessThan(itemRoot.get("salary"), employerQuery.getSalary()),
+                        criteriaBuilder.equal(itemRoot.get("name"), employerQuery.getName())
+                )
+        );
+        Query<Employer> query= sessionOne.createQuery(criteriaQuery);
+        query.setFirstResult(employerQuery.getLimit()*(employerQuery.getNumberPage()-1));
+        query.setMaxResults(employerQuery.getLimit());
+
+        return query.getResultList();
     }
 
     public static EmployerStorage getInstance() {

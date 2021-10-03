@@ -11,7 +11,7 @@
     <p> ${employer.position.name} </p>
 
 <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/position">Positions</a>
-<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?pageNumber=1&countEmployer=50">Employers</a>
+<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?page=1&limit=50">Employers</a>
 <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/department">Departments</a>
 
 </body>

@@ -1,10 +1,25 @@
 package model;
 
-public class Employer {
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Objects;
+
+@Entity
+@Table(name="employers")
+public class Employer implements Serializable {
+    @Id
+    @GeneratedValue
     private int id;
+    @Column
     private String name;
+    @Column
     private Double salary;
+
+    @ManyToOne
+    @JoinColumn(name = "department", referencedColumnName = "id")
     private Department department;
+    @ManyToOne
+    @JoinColumn(name = "position", referencedColumnName = "id")
     private Position position;
 
     public Employer(String name, Double salary,String departmentName, String positionName) {
@@ -15,6 +30,18 @@ public class Employer {
     }
     public Employer(){}
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employer employer = (Employer) o;
+        return id == employer.id && Objects.equals(name, employer.name) && Objects.equals(salary, employer.salary) && Objects.equals(department, employer.department) && Objects.equals(position, employer.position);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, salary, department, position);
+    }
 
     public int getId() {
         return id;
@@ -54,5 +81,16 @@ public class Employer {
 
     public void setPosition(Position position) {
         this.position = position;
+    }
+
+    @Override
+    public String toString() {
+        return "Employer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", department=" + department +
+                ", position=" + position +
+                '}';
     }
 }
