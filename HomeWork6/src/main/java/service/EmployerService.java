@@ -1,34 +1,49 @@
 package service;
 
+import model.AppParam;
+import model.Department;
 import model.Employer;
-import model.dto.EmployerQuery;
-import storage.DepartmentStorage;
-import storage.EmployerStorage;
-import storage.PositionStorage;
+import model.Position;
+import model.dto.EmployerSearchFilter;
+import model.dto.PageableFilter;
+import service.api.IEmployerService;
+import storage.SQL.DepartmentStorage;
+import storage.SQL.EmployerStorage;
+import storage.SQL.PositionStorage;
+import storage.api.IDepartmentStorage;
+import storage.api.IEmployerStorage;
+import storage.api.IPositionStorage;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployerService {
+public class EmployerService implements IEmployerService {
     private static final EmployerService instance = new EmployerService();
-    private final EmployerStorage employerStorage;
-    private final DepartmentStorage departmentStorage;
-    private final PositionStorage positionStorage;
+    private final IEmployerStorage employerStorage;
+    private final IDepartmentStorage departmentStorage;
+    private final IPositionStorage positionStorage;
     private final CalculationsService calculationsService;
 
 
     public EmployerService() {
-        this.employerStorage = EmployerStorage.getInstance();
-        this.departmentStorage = DepartmentStorage.getInstance();
-        this.positionStorage = PositionStorage.getInstance();
+        this.employerStorage = AppParam.getInstance().getEmployerStorage();
+        this.departmentStorage = AppParam.getInstance().getDepartmentStorage();
+        this.positionStorage = AppParam.getInstance().getPositionStorage();
         this.calculationsService = CalculationsService.getInstance();
     }
 
     public int addEmployer(Employer employer) {
         int idDepartment = departmentStorage.getIdName(employer.getDepartment().getName());
         int idPosition = positionStorage.getIdName(employer.getPosition().getName());
-        return employerStorage.addEmployer(employer, idDepartment, idPosition);
+
+        Department department = new Department(idDepartment);
+        Position position = new Position(idPosition);
+
+        employer.setDepartment(department);
+        employer.setPosition(position);
+
+        return employerStorage.addEmployer(employer);
     }
 
     public ArrayList<String> readFilePositions() throws IOException {
@@ -43,9 +58,13 @@ public class EmployerService {
         return employerStorage.get(id);
     }
 
-    public List<Employer> pageEmployer(String pageNumber, String countEmployer) {
+    public List<Employer> page(PageableFilter filter) {
 
-        return employerStorage.employerPage(Integer.parseInt(pageNumber), countEmployer);
+        return employerStorage.page(filter);
+    }
+    public List<Employer> pageFilter(EmployerSearchFilter filter) {
+
+        return employerStorage.pageFilter(filter);
     }
 
     public void generationEmployers() throws IOException {
@@ -58,21 +77,4 @@ public class EmployerService {
         return instance;
     }
 
-    public List<Employer> sort(EmployerQuery employerQuery) {
-        List<Employer> employers = null;
-
-        if ((!employerQuery.getName().equals("")) & (!employerQuery.getSalary().equals(""))) {
-            employers = employerStorage.findAndSalary(employerQuery);
-                return employers;
-        }
-
-        if (!employerQuery.getName().equals("")) {
-            employers = employerStorage.find(employerQuery);
-        }
-
-        if (!employerQuery.getSalary().equals("")) {
-            employers = employerStorage.salary(employerQuery);
-        }
-        return employers;
-    }
 }

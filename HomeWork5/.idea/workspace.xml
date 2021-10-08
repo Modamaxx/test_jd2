@@ -5,38 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d7bee41-c9fd-4ae1-97e6-616f18ae46a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/controllers/listeners/StartListeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/AppParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/dto/EPredicateOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/dto/ESalaryOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/dto/ESortDirection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/dto/PageableFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/api/ETypeStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/api/ICalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/api/IDepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/api/IEmployerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/api/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/Hibernate/HQLDepartmentStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/Hibernate/HQLEmployerStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/Hibernate/HQLPositionStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/api/IDepartmentStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/api/IEmployerStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/api/IPositionStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/controllers/servlets/EmployerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/controllers/servlets/EmployerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/controllers/servlets/TestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/dto/EmployerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/model/dto/EmployerSearchFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/CalculationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/CalculationsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/DepartmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/EmployerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/DepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/DepartmentStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/EmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/EmployerStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/resources/Employers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/resources/Employers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/service/PositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/ConnectionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/SQL/ConnectionStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/DepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/SQL/DepartmentStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/EmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/SQL/EmployerStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/Hibernate/HibernateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/PositionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/SQL/PositionStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/java/storage/api/TestHQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/card/cardEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/card/cardEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/card/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/card/cardPosition.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/page/pageEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/page/pageEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/src/main/webapp/views/test/cardAllEmployerTest.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Employers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Employers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/EmployerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/EmployerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/TestServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/TestServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/CalculationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/CalculationsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/DepartmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/EmployerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/EmployerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/DepartmentStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/DepartmentStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/EmployerStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/EmployerStorage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/card/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/card/cardPosition.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/test/cardAllEmployerTest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/HomeWork6-1.0-SNAPSHOT/views/test/cardAllEmployerTest.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/Employers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/Employers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/controllers/servlets/EmployerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/controllers/servlets/EmployerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/controllers/servlets/TestServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/service/CalculationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/service/CalculationsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/service/DepartmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/service/EmployerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/service/EmployerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/DepartmentStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/DepartmentStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/EmployerStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/EmployerStorage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/classes/service/PositionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/ConnectionStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/DepartmentStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/EmployerStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork6/target/classes/storage/PositionStorage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWork6/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork6/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />

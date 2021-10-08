@@ -43,6 +43,10 @@ public class SignUpServlet extends HttpServlet {
 
         int id = employerService.addEmployer(employer);
         req.setAttribute("id",String.valueOf(id));
+        ArrayList<String> strPositions= employerService.readFilePositions();
+        ArrayList<String> strDepartments= employerService.readFileDepartments();
+        req.setAttribute("strPositions",strPositions);
+        req.setAttribute("strDepartments",strDepartments);
         req.getRequestDispatcher("views/signUp.jsp").forward(req, resp);
 
     }

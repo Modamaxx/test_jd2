@@ -1,15 +1,16 @@
 package service;
 
-import storage.DepartmentStorage;
-import storage.EmployerStorage;
-import storage.PositionStorage;
+import service.api.ICalculationService;
+import storage.SQL.DepartmentStorage;
+import storage.SQL.EmployerStorage;
+import storage.SQL.PositionStorage;
 
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class CalculationsService {
+public class CalculationsService implements ICalculationService {
     private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources";
 
     private static final CalculationsService instance = new CalculationsService();
@@ -25,7 +26,7 @@ public class CalculationsService {
 
     public int[] Department() throws IOException {
         int[] arr = new int[5];
-        Path path = Paths.get(PATH + "/Departments.txt");
+        Path path = Paths.get(PATH + "/FileForRead/Departments.txt");
         Scanner scanner = new Scanner(path);
         for (int i = 0; i < 5; i++) {
             arr[i] = departmentStorage.getIdName(scanner.next());
@@ -36,7 +37,7 @@ public class CalculationsService {
 
     public int[] Position() throws IOException {
         int[] arr = new int[10];
-        Path path = Paths.get(PATH + "/Position.txt");
+        Path path = Paths.get(PATH + "/FileForRead/Position.txt");
         Scanner scanner = new Scanner(path);
         for (int i = 0; i < 10; i++) {
             arr[i] = positionStorage.getIdName(scanner.next());

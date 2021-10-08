@@ -1,22 +1,23 @@
 package service;
 
+import model.AppParam;
 import model.Department;
 import model.Employer;
-import storage.DepartmentStorage;
-import storage.EmployerStorage;
-import storage.PositionStorage;
+import service.api.IDepartmentService;
+import storage.SQL.DepartmentStorage;
+import storage.api.IDepartmentStorage;
 
-import java.util.ArrayList;
+import java.io.IOException;
 import java.util.List;
 
-public class DepartmentService {
+public class DepartmentService implements IDepartmentService {
     private static final DepartmentService instance = new DepartmentService();
-    private final DepartmentStorage departmentStorage;
+    private final IDepartmentStorage departmentStorage;
     private DepartmentService() {
 
-        this.departmentStorage=DepartmentStorage.getInstance();
+        this.departmentStorage= AppParam.getInstance().getDepartmentStorage();
     }
-    public void generationDepartments(){
+    public void generationDepartments() throws IOException {
         departmentStorage.generationDepartments();
     }
 

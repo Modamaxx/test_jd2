@@ -8,29 +8,29 @@
 <body>
    <p>All employers</p>
 
-        <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=50&page=${page}">50</a>
+        <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=50&page=${page}">50</a>
         <br>
-        <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=100&page=${page}">100</a>
+        <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=100&page=${page}">100</a>
         <br>
-        <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=150&page=${page}">150</a>
+        <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=150&page=${page}">150</a>
         <br>
         <br>
 
        <form  method="GET" >
                 <td>Enter Name:</td>
-                <td><input name="SearchName"></td>
+                <td><input name="name"></td>
 
                 <td>Enter Salary:</td>
-                <td><input name="Salary"></td>
+                <td><input name="salary"></td>
 
                 <tr>
-                     <select name="Sort">
-                             <option> ascending </option>
-                             <option> descending </option>
+                     <select name="salary_operator">
+                             <option value="GREAT_OR_EQUAL"> ascending </option>
+                             <option value="LESS_OR_EQUAL"> descending </option>
                      </select>
                 </tr>
 
-                <td> <input type="hidden" name="limit" value="${limit}"><br>
+                <td> <input type="hidden" name="size" value="${size}"><br>
                 <td> <input type="hidden" name="page" value="${page}"><br>
 
                 <p><input type="submit" value="Search"> </input></p>
@@ -44,8 +44,8 @@
         <c:if test="${page != null}">
 
                 <c:if test="${page != 1}">
-                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=${limit}&page=${page-1}"> << </a>
-                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=${limit}&page=${1}">1</a>
+                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=${size}&page=${page-1}"> << </a>
+                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=${size}&page=${1}">1</a>
                 </c:if>
             <c:forEach begin="${page}" end="${page+10}" var="i">
                 <c:if test="${i<=pageCount}">
@@ -54,14 +54,14 @@
                               <td>${i}</td>
                          </c:when>
                              <c:otherwise>
-                                <td><a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=${limit}&page=${i}">${i}</a></td>
+                                <td><a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=${size}&page=${i}">${i}</a></td>
                              </c:otherwise>
                     </c:choose>
                 </c:if>
             </c:forEach>
                 <c:if test="${page != pageCount}">
-                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=${limit}&page=${page+1}"> >> </a>
-                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?limit=${limit}&page=${pageCount}"> ${pageCount} </a>
+                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=${size}&page=${page+1}"> >> </a>
+                    <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?size=${size}&page=${pageCount}"> ${pageCount} </a>
                 </c:if>
         </c:if>
 </body>

@@ -7,13 +7,16 @@ import java.io.Serializable;
 @Table(name="positions")
 public class Position implements Serializable {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column
+    @Column (name="name")
     private String name;
 
     public Position(String name) {
         this.name = name;
+    }
+    public Position(int id) {
+        this.id = id;
     }
 
     public Position(int id, String name) {

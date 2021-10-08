@@ -1,24 +1,26 @@
 package service;
 
+import model.AppParam;
 import model.Employer;
 import model.Position;
-import storage.DepartmentStorage;
-import storage.EmployerStorage;
-import storage.PositionStorage;
+import service.api.IPositionService;
+import storage.SQL.PositionStorage;
+import storage.api.IPositionStorage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PositionService {
+public class PositionService implements IPositionService {
 
     private static final PositionService instance = new PositionService();
-    private final PositionStorage positionStorage;
+    private final IPositionStorage positionStorage;
 
     private PositionService() {
-        this.positionStorage= PositionStorage.getInstance();
+        this.positionStorage= AppParam.getInstance().getPositionStorage();
     }
 
-    public ArrayList<Position> pagePosition(){
+    public List<Position> pagePosition(){
         return positionStorage.pagePosition();
     }
 
@@ -26,7 +28,7 @@ public class PositionService {
       return this.positionStorage.cardPosition(id);
     }
 
-    public void generationPosition(){
+    public void generationPosition() throws IOException {
         positionStorage.generationPosition();
     }
     public static PositionService getInstance() {

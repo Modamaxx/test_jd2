@@ -4,27 +4,35 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name="departments")
+@Table(name = "departments")
 public class Department implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column
+    @Column(name = "name")
     private String name;
-    @Column
-    private String parent;
+    private Integer parent;
 
-    public Department(String name){
-        this.name=name;
+    public Department(String name) {
+        this.name = name;
     }
 
-    public Department(int id,String name,String parent){
-        this.id=id;
-        this.name=name;
-        this.parent=parent;
+    public Department(String name, int parent) {
+        this.name = name;
+        this.parent = parent;
     }
 
-    public Department(){
+    public Department(int id) {
+        this.id = id;
+    }
+
+    public Department(int id, String name) {
+        this.id = id;
+        this.name = name;
+        this.parent = parent;
+    }
+
+    public Department() {
 
     }
 
@@ -44,11 +52,11 @@ public class Department implements Serializable {
         this.name = name;
     }
 
-    public String getParent() {
+    public int getParent() {
         return parent;
     }
 
-    public void setParent(String parent) {
+    public void setParent(int parent) {
         this.parent = parent;
     }
 }

@@ -8,18 +8,19 @@ import java.util.Objects;
 @Table(name="employers")
 public class Employer implements Serializable {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column
+    @Column(name="name")
     private String name;
-    @Column
+    @Column(name="salary")
     private Double salary;
 
-    @ManyToOne
-    @JoinColumn(name = "department", referencedColumnName = "id")
+    @OneToOne
+    @JoinColumn(name = "department")
     private Department department;
-    @ManyToOne
-    @JoinColumn(name = "position", referencedColumnName = "id")
+
+    @OneToOne
+    @JoinColumn(name = "position")
     private Position position;
 
     public Employer(String name, Double salary,String departmentName, String positionName) {

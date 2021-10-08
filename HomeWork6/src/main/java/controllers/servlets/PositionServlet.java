@@ -31,7 +31,7 @@ public class PositionServlet extends HttpServlet {
             req.getRequestDispatcher("/views/card/cardPosition.jsp").forward(req, resp);
         }
 
-        ArrayList<Position> str = positionService.pagePosition();
+        List<Position> str = positionService.pagePosition();
         req.setAttribute("str", str);
         req.getRequestDispatcher("/views/page/pagePosition.jsp").forward(req, resp);
     }
