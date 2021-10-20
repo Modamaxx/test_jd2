@@ -4,6 +4,9 @@ import model.Employer;
 import model.dto.*;
 import service.CalculationsService;
 import service.EmployerService;
+import service.api.ICalculationService;
+import service.api.IEmployerService;
+import utils.ApplicationContextUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,12 +18,12 @@ import java.util.List;
 
 @WebServlet(name = "EmployerServlet", urlPatterns = "/employer")
 public class EmployerServlet extends HttpServlet {
-    private final EmployerService employerService;
-    private final CalculationsService calculationsService;
+    private final IEmployerService employerService;
+    private final ICalculationService calculationsService;
 
     public EmployerServlet() {
-        this.employerService = EmployerService.getInstance();
-        this.calculationsService = CalculationsService.getInstance();
+        this.employerService = ApplicationContextUtil.getContext().getBean(IEmployerService.class);
+        this.calculationsService =ApplicationContextUtil.getContext().getBean(ICalculationService.class);
     }
 
     @Override

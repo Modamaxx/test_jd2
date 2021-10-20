@@ -1,5 +1,0 @@
-account Empty
-sale account
-supply account
-juridical supply
-marketing juridical

@@ -15,5 +15,6 @@ public interface IEmployerService {
     ArrayList<String> readFileDepartments() throws IOException;
     Employer get(int id);
     List<Employer> page(PageableFilter filter);
+    public List<Employer> pageFilter(EmployerSearchFilter filter);
     void generationEmployers() throws IOException;
 }

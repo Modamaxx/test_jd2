@@ -6,6 +6,7 @@ import model.Employer;
 import model.Position;
 import model.dto.EmployerSearchFilter;
 import model.dto.PageableFilter;
+import service.api.ICalculationService;
 import service.api.IEmployerService;
 import storage.SQL.DepartmentStorage;
 import storage.SQL.EmployerStorage;
@@ -19,18 +20,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployerService implements IEmployerService {
-    private static final EmployerService instance = new EmployerService();
     private final IEmployerStorage employerStorage;
     private final IDepartmentStorage departmentStorage;
     private final IPositionStorage positionStorage;
-    private final CalculationsService calculationsService;
+    private final ICalculationService calculationsService;
 
 
-    public EmployerService() {
-        this.employerStorage = AppParam.getInstance().getEmployerStorage();
-        this.departmentStorage = AppParam.getInstance().getDepartmentStorage();
-        this.positionStorage = AppParam.getInstance().getPositionStorage();
-        this.calculationsService = CalculationsService.getInstance();
+    public EmployerService(IEmployerStorage employerStorage, IDepartmentStorage departmentStorage,
+                           IPositionStorage positionStorage, ICalculationService calculationsService) {
+        this.employerStorage = employerStorage;
+        this.departmentStorage = departmentStorage;
+        this.positionStorage = positionStorage;
+        this.calculationsService = calculationsService;
     }
 
     public int addEmployer(Employer employer) {
@@ -62,6 +63,7 @@ public class EmployerService implements IEmployerService {
 
         return employerStorage.page(filter);
     }
+
     public List<Employer> pageFilter(EmployerSearchFilter filter) {
 
         return employerStorage.pageFilter(filter);
@@ -71,10 +73,6 @@ public class EmployerService implements IEmployerService {
         int[] arrDepartment = calculationsService.Department();
         int[] arrPosition = calculationsService.Position();
         employerStorage.generationEmployers(arrDepartment, arrPosition);
-    }
-
-    public static EmployerService getInstance() {
-        return instance;
     }
 
 }

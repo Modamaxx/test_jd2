@@ -4,11 +4,28 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="ilyaPersonService" class="by.it_academy.spring.service.IlyaPersonService" />
-    <bean id="natashaPersonService" class="by.it_academy.spring.service.NatashaPersonService" />
+    <import resource="storage.xml"/>
 
-    <bean class="by.it_academy.spring.service.ConsolePrinterHelloService">
-        <constructor-arg ref="natashaPersonService"/>
-        <constructor-arg ref="sessionFactory"/>
+    <bean id="CalculationsService" class="service.CalculationsService">
+        <constructor-arg ref="HQLDepartmentStorage"/>
+        <constructor-arg ref="HQLEmployerStorage"/>
+        <constructor-arg ref="HQLPositionStorage"/>
     </bean>
+
+    <bean id="DepartmentService" class="service.DepartmentService">
+        <constructor-arg ref="HQLDepartmentStorage"/>
+    </bean>
+
+    <bean id="EmployerService" class="service.EmployerService">
+        <constructor-arg ref="HQLDepartmentStorage"/>
+        <constructor-arg ref="HQLEmployerStorage"/>
+        <constructor-arg ref="HQLPositionStorage"/>
+        <constructor-arg ref="CalculationsService"/>
+    </bean>
+
+    <bean id="PositionService" class="service.PositionService">
+        <constructor-arg ref="HQLPositionStorage"/>
+    </bean>
+
+
 </beans>

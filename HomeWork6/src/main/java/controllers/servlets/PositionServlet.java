@@ -3,6 +3,8 @@ package controllers.servlets;
 import model.Employer;
 import model.Position;
 import service.PositionService;
+import service.api.IPositionService;
+import utils.ApplicationContextUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,10 +17,10 @@ import java.util.List;
 
 @WebServlet(name = "PositionServlet", urlPatterns = "/position")
 public class PositionServlet extends HttpServlet {
-    private final PositionService positionService;
+    private final IPositionService positionService;
 
     public PositionServlet() {
-        this.positionService = PositionService.getInstance();
+        this.positionService = ApplicationContextUtil.getContext().getBean(IPositionService.class);
     }
 
     @Override

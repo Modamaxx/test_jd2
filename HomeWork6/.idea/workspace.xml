@@ -5,99 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61001add-e35b-45a9-9b73-dc66ed588eec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/listeners/StartListeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/AppParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dto/EPredicateOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dto/ESalaryOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dto/ESortDirection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dto/PageableFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/ETypeStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/ICalculationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/IDepartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/IEmployerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/api/IPositionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLDepartmentStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLEmployerStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLPositionStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/api/IDepartmentStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/api/IEmployerStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/api/IPositionStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/storage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HomeWork5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork5/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/ServiceOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/ServiceThere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Test/ServiceTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/DaoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/ServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/SpringTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ApplicationContextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mvc-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/listeners/StartListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/listeners/StartListeners.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/DepartmentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/DepartmentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/EmployerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/EmployerServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/PositionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/PositionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignInServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignUpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dto/EmployerQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dto/EmployerSearchFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DepartmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EmployerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndJoinTable/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndJoinTable/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndJoinTable/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndJoinTable/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndJoinTable/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndJoinTable/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndJoinTable/model/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndJoinTable/model/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndOneToMany/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndOneToMany/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndOneToMany/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndOneToMany/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndOneToMany/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndOneToMany/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/ManyToOneAndOneToMany/model/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/ManyToOneAndOneToMany/model/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToManyAndJoinColumn/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToManyAndJoinColumn/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToManyAndJoinColumn/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToManyAndJoinColumn/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToManyAndJoinColumn/model/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToManyAndJoinColumn/model/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToOne/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToOne/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToOne/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToOne/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToOne/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToOne/model/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/Hibernate/OneToOne/model/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/HibernateCommunications/OneToOne/model/Employer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PositionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ConnectionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/SQL/ConnectionStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/DepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/SQL/DepartmentStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/EmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/SQL/EmployerStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/PositionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/SQL/PositionStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/api/TestHQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Departments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FileForRead/Departments.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Employers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FileForRead/Employers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Position.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FileForRead/Position.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernateManyToMany.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Communications/hibernateManyToMany.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernateManytoOneAndOneToMany.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Communications/hibernateManytoOneAndOneToMany.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernateOnetoOne.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Communications/hibernateOnetoOne.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/api/ETypeStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/api/ETypeStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/api/IEmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/api/IEmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLDepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLDepartmentStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLEmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLEmployerStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLPositionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLPositionStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/service.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/card/cardEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/card/cardEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/page/pageEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pageEmployer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Departments.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Employers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/Position.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/DepartmentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/DepartmentServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/EmployerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/EmployerServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/PositionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/PositionServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignInServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignUpServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Employer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Employer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/TestServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/CalculationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/CalculationsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/DepartmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/EmployerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/EmployerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/service/PositionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/EmployerStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/EmployerStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/ConnectionStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/DepartmentStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/EmployerStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/storage/PositionStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/test/cardAllEmployerTest.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Departments.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Employers.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Position.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/DepartmentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/DepartmentServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/EmployerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/EmployerServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/PositionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/PositionServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/servlets/SignUpServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Employer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Employer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Position.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/CalculationsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/CalculationsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/DepartmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/EmployerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/EmployerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/PositionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/PositionService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/ConnectionStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/DepartmentStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/EmployerStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/storage/PositionStorage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -111,9 +78,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -150,12 +117,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../проекты ильи/spring_test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\courses\DZ\Home\HomeWork6\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\courses\DZ\Home\HomeWork6\src\main\resources" />
@@ -169,13 +139,13 @@
       <recent name="service.Hibernate.ManyToOneAndOneToMany" />
     </key>
   </component>
-  <component name="RunManager" selected="Remote JVM Debug.Unnamed">
-    <configuration name="SqlTest4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="service.SqlTest4" />
+  <component name="RunManager" selected="Application.SpringTestMain">
+    <configuration name="SpringTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="service.SpringTestMain" />
       <module name="HomeWork6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="service.HibernateCommunications.OneToOne.*" />
+          <option name="PATTERN" value="service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -277,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringTestMain" />
         <item itemvalue="Application.TestHQL" />
         <item itemvalue="Application.Task (1)" />
         <item itemvalue="Application.Task" />
         <item itemvalue="Application.Task (2)" />
-        <item itemvalue="Application.SqlTest4" />
       </list>
     </recent_temporary>
   </component>

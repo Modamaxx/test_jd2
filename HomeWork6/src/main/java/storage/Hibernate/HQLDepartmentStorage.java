@@ -23,13 +23,12 @@ import java.util.Scanner;
 
 public class HQLDepartmentStorage implements IDepartmentStorage {
 
-    private static final HQLDepartmentStorage instance = new HQLDepartmentStorage();
     private final int NUMBER_DEPARTMENT = 5;
     private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources\\FileForRead\\Departments.txt";
     private final SessionFactory sessionFactory;
 
-    private HQLDepartmentStorage() {
-        this.sessionFactory = HibernateUtil.getSessionFactory();
+    public HQLDepartmentStorage(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
     }
 
     @Override
@@ -123,9 +122,5 @@ public class HQLDepartmentStorage implements IDepartmentStorage {
             scanner.next();
         }
         return str;
-    }
-
-    public static HQLDepartmentStorage getInstance() {
-        return instance;
     }
 }

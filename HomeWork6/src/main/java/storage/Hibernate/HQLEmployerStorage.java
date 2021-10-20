@@ -23,13 +23,11 @@ import java.util.Scanner;
 
 public class HQLEmployerStorage implements IEmployerStorage {
 
-    private final static HQLEmployerStorage instance = new HQLEmployerStorage();
-    private final SessionFactory sessionFactory;
     private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources\\FileForRead\\Employers.txt";
 
-
-    public HQLEmployerStorage() {
-        this.sessionFactory = HibernateUtil.getSessionFactory();
+    private final SessionFactory sessionFactory;
+    public HQLEmployerStorage(SessionFactory sessionFactory) {
+        this.sessionFactory =sessionFactory;
     }
 
     @Override
@@ -172,9 +170,5 @@ public class HQLEmployerStorage implements IEmployerStorage {
         sessionOne.getTransaction().commit();
 
         return resultList;
-    }
-
-    public static HQLEmployerStorage getInstance() {
-        return instance;
     }
 }

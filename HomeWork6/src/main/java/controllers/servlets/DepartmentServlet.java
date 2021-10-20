@@ -1,26 +1,25 @@
 package controllers.servlets;
-
 import model.Department;
 import model.Employer;
-import model.Position;
-import service.DepartmentService;
-
+import service.api.IDepartmentService;
+import utils.ApplicationContextUtil;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "DepartmentServlet", urlPatterns = "/department")
 public class DepartmentServlet extends HttpServlet {
-    private final DepartmentService departmentService;
+    private final IDepartmentService departmentService;
 
     public DepartmentServlet() {
-        this.departmentService = DepartmentService.getInstance();
+        this.departmentService= ApplicationContextUtil.getContext().getBean(IDepartmentService.class);
     }
+
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (req.getParameter("id") != null) {

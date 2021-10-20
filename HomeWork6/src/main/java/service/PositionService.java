@@ -13,11 +13,10 @@ import java.util.List;
 
 public class PositionService implements IPositionService {
 
-    private static final PositionService instance = new PositionService();
     private final IPositionStorage positionStorage;
 
-    private PositionService() {
-        this.positionStorage= AppParam.getInstance().getPositionStorage();
+    public PositionService(IPositionStorage positionStorage) {
+        this.positionStorage= positionStorage;
     }
 
     public List<Position> pagePosition(){
@@ -31,7 +30,5 @@ public class PositionService implements IPositionService {
     public void generationPosition() throws IOException {
         positionStorage.generationPosition();
     }
-    public static PositionService getInstance() {
-        return instance;
-    }
+
 }

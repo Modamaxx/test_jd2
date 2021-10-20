@@ -20,13 +20,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class HQLPositionStorage implements IPositionStorage {
-    private static final HQLPositionStorage instance = new HQLPositionStorage();
     private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources\\FileForRead\\Position.txt";
     private final int NUMBER_POSITIONS = 10;
     private final SessionFactory sessionFactory;
 
-    public HQLPositionStorage() {
-        this.sessionFactory=HibernateUtil.getSessionFactory();
+    public HQLPositionStorage(SessionFactory sessionFactory) {
+        this.sessionFactory=sessionFactory;
     }
 
     @Override
@@ -102,9 +101,5 @@ public class HQLPositionStorage implements IPositionStorage {
             str.add(scanner.next());
         }
         return str;
-    }
-
-    public static HQLPositionStorage getInstance(){
-        return instance;
     }
 }

@@ -4,6 +4,9 @@ import service.api.ICalculationService;
 import storage.SQL.DepartmentStorage;
 import storage.SQL.EmployerStorage;
 import storage.SQL.PositionStorage;
+import storage.api.IDepartmentStorage;
+import storage.api.IEmployerStorage;
+import storage.api.IPositionStorage;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -13,15 +16,16 @@ import java.util.Scanner;
 public class CalculationsService implements ICalculationService {
     private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources";
 
-    private static final CalculationsService instance = new CalculationsService();
-    private final DepartmentStorage departmentStorage;
-    private final PositionStorage positionStorage;
-    private final EmployerStorage employerStorage;
+    private final IDepartmentStorage departmentStorage;
+    private final IPositionStorage positionStorage;
+    private final IEmployerStorage employerStorage;
 
-    public CalculationsService() {
-        this.departmentStorage = DepartmentStorage.getInstance();
-        this.positionStorage = PositionStorage.getInstance();
-        this.employerStorage=EmployerStorage.getInstance();
+    public CalculationsService(IDepartmentStorage iDepartmentStorage,
+                               IPositionStorage iPositionStorage,
+                               IEmployerStorage iEmployerStorage) {
+        this.departmentStorage = iDepartmentStorage;
+        this.positionStorage = iPositionStorage;
+        this.employerStorage = iEmployerStorage;
     }
 
     public int[] Department() throws IOException {
@@ -45,12 +49,9 @@ public class CalculationsService implements ICalculationService {
         return arr;
     }
 
-    public String pageCount(double limit){
-          int countEmployers= employerStorage.countEmployer();
-          return String.valueOf((long) Math.ceil((double) countEmployers/limit));
+    public String pageCount(double limit) {
+        int countEmployers = employerStorage.countEmployer();
+        return String.valueOf((long) Math.ceil((double) countEmployers / limit));
     }
 
-    public static CalculationsService getInstance() {
-        return instance;
-    }
 }

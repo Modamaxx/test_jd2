@@ -3,6 +3,8 @@ package controllers.servlets;
 
 import model.Employer;
 import service.EmployerService;
+import service.api.IEmployerService;
+import utils.ApplicationContextUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,10 +15,10 @@ import java.io.IOException;
 
 @WebServlet(name = "SignInServlet", urlPatterns = "/signIn")
 public class SignInServlet extends HttpServlet {
-    private final EmployerService employerService;
+    private final IEmployerService employerService;
 
     public SignInServlet() {
-        this.employerService = EmployerService.getInstance();
+        this.employerService = ApplicationContextUtil.getContext().getBean(IEmployerService.class);
     }
 
     @Override

@@ -3,6 +3,8 @@ package controllers.servlets;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Employer;
 import service.EmployerService;
+import service.api.IEmployerService;
+import utils.ApplicationContextUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,11 +16,11 @@ import java.util.ArrayList;
 
 @WebServlet(name = "SignUpServlet", urlPatterns = "/signUp")
 public class SignUpServlet extends HttpServlet {
-    private final EmployerService employerService;
+    private final IEmployerService employerService;
     private ObjectMapper mapper = new ObjectMapper();
 
     public SignUpServlet() {
-        this.employerService = EmployerService.getInstance();
+        this.employerService = ApplicationContextUtil.getContext().getBean(IEmployerService.class);
     }
 
     @Override
