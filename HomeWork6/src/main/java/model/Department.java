@@ -52,7 +52,7 @@ public class Department implements Serializable {
         this.name = name;
     }
 
-    public int getParent() {
+    public Integer getParent() {
         return parent;
     }
 

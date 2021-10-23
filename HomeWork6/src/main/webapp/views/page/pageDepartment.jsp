@@ -7,7 +7,7 @@
 <body>
           <c:forEach var="item" items="${str}">
            <br>
-               <a   href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/department?id=${item.id}">${item.name}</a>
+               <a   href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/department/page?id=${item.id}">${item.name}</a>
        </c:forEach>
 </body>
 </html>

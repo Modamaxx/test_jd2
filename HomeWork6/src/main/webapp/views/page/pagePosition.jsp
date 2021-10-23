@@ -9,7 +9,7 @@
 
    <table>
        <c:forEach var="item" items="${str}">
-               <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/position?id=${item.id}">${item.name}</a>
+               <a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/position/page?id=${item.id}">${item.name}</a>
         <br>
        </c:forEach>
    </table>

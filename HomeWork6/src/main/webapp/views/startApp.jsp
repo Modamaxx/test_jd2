@@ -5,21 +5,25 @@
 </head>
 <body>
    <p>Welcome</p>
-   <form method="POST" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/department">
+   <form method="POST" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/api/department/generation">
         <p><input type="submit"  value ="Generating 5 departments"></input></p>
    </form>
 
-   <form method="POST" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/position">
+   <form method="POST" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/api/position/generation">
          <p><input type="submit"  value ="Generating 10 Position"></input></p>
    </form>
 
-   <form method="POST" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer">
+   <form method="POST" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/api/employer/generation">
          <p><input type="submit" value ="Generating 10_000 Employers"></input></p>
    </form>
 
-   <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork6-1.0-SNAPSHOT/signIn' ;" value ="Enter"></input></p>
-   <p><input type="button" onclick="location.href='http://localhost:8080/HomeWork6-1.0-SNAPSHOT/signUp' ;" value ="Register"></input></p>
+ <form method="GET" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer/authorization">
+         <p><input type="submit" value ="Enter"></input></p>
+ </form>
 
+<form method="GET" action="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer/registration">
+      <p><input type="submit" value ="Register"></input></p>
+</form>
 
 
 </body>

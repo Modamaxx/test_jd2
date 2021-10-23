@@ -26,8 +26,9 @@ public class HQLEmployerStorage implements IEmployerStorage {
     private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources\\FileForRead\\Employers.txt";
 
     private final SessionFactory sessionFactory;
+
     public HQLEmployerStorage(SessionFactory sessionFactory) {
-        this.sessionFactory =sessionFactory;
+        this.sessionFactory = sessionFactory;
     }
 
     @Override
@@ -75,16 +76,16 @@ public class HQLEmployerStorage implements IEmployerStorage {
 
     @Override
     public List<Employer> page(PageableFilter filter) {
-        Session session =sessionFactory.openSession();
+        Session session = sessionFactory.openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<Employer> cr = cb.createQuery(Employer.class);
         Root<Employer> root = cr.from(Employer.class);
         cr.select(root);
 
-        Query  query = session.createQuery(cr);
+        Query query = session.createQuery(cr);
 
-        query.setFirstResult(filter.getSize() * (filter.getPage()- 1));
-        query.setMaxResults( filter.getSize());
+        query.setFirstResult(filter.getSize() * (filter.getPage() - 1));
+        query.setMaxResults(filter.getSize());
 
         List<Employer> results = query.getResultList();
 
@@ -94,12 +95,20 @@ public class HQLEmployerStorage implements IEmployerStorage {
 
     @Override
     public int countEmployer() {
-        return 0;
+        Session session =sessionFactory.openSession();
+        CriteriaBuilder cb = session.getCriteriaBuilder();
+        CriteriaQuery<Employer> cr = cb.createQuery(Employer.class);
+        Root<Employer> root = cr.from(Employer.class);
+        cr.select(root);
+
+        Query  query = session.createQuery(cr);
+        List<Employer> results = query.getResultList();
+        return results.size();
     }
 
     @Override
     public List<Employer> pageFilter(EmployerSearchFilter filter) {
-        Session sessionOne = HibernateUtil.getSessionFactory().openSession();
+        Session sessionOne = sessionFactory.openSession();
         sessionOne.beginTransaction();
 
         CriteriaBuilder criteriaBuilder = HibernateUtil.getSessionFactory().createEntityManager().getCriteriaBuilder();
@@ -108,17 +117,17 @@ public class HQLEmployerStorage implements IEmployerStorage {
         Root<Employer> itemRoot = criteriaQuery.from(Employer.class);
 
         List<Predicate> predicates = new ArrayList<>();
-        if(!filter.getName().equals("")){
+        if (!filter.getName().equals("")) {
             predicates.add(criteriaBuilder.equal(itemRoot.get("name"), filter.getName()));
         }
 
-        if (!filter.getSalary().equals("")){
+        if (!filter.getSalary().equals("")) {
             ESalaryOperator operator = filter.getSalaryOperator();
-            if(operator == null){
+            if (operator == null) {
                 operator = ESalaryOperator.GREAT_OR_EQUAL;
             }
             Predicate predicate;
-            switch (operator){
+            switch (operator) {
                 case GREAT_OR_EQUAL:
                     predicate = criteriaBuilder.ge(itemRoot.get("salary"), Double.valueOf(filter.getSalary()));
                     break;
@@ -129,7 +138,7 @@ public class HQLEmployerStorage implements IEmployerStorage {
                     predicate = null;
             }
 
-            if(predicate == null){
+            if (predicate == null) {
                 throw new IllegalArgumentException("Я не знаю как обработать переданный поисковый оператор");
             }
 
@@ -138,7 +147,7 @@ public class HQLEmployerStorage implements IEmployerStorage {
 
         EPredicateOperator predicateOperator = filter.getPredicateOperator();
 
-        if(predicateOperator == null){
+        if (predicateOperator == null) {
             predicateOperator = EPredicateOperator.AND;
         }
 
@@ -146,7 +155,7 @@ public class HQLEmployerStorage implements IEmployerStorage {
 
         Expression<Boolean> restriction;
 
-        if(EPredicateOperator.AND.equals(predicateOperator)){
+        if (EPredicateOperator.AND.equals(predicateOperator)) {
             restriction = criteriaBuilder.and(predicatesArr);
         } else {
             restriction = criteriaBuilder.or(predicatesArr);
@@ -158,12 +167,12 @@ public class HQLEmployerStorage implements IEmployerStorage {
 
         int size = filter.getSize();
 
-        if(size == 0){
+        if (size == 0) {
             size = 50;
         }
 
         query.setMaxResults(size);
-        query.setFirstResult((filter.getPage()-1) * size);
+        query.setFirstResult((filter.getPage() - 1) * size);
 
         List<Employer> resultList = query.getResultList();
 

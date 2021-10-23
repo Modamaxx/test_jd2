@@ -10,9 +10,9 @@
     <p> ${employer.department.name} </p>
     <p> ${employer.position.name} </p>
 
-<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/position">Positions</a>
-<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer?page=1&size=50">Employers</a>
-<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/department">Departments</a>
+<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/position/page">Positions</a>
+<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/employer/page?page=1&size=50">Employers</a>
+<a href="http://localhost:8080/HomeWork6-1.0-SNAPSHOT/department/page">Departments</a>
 
 </body>
 </html>
