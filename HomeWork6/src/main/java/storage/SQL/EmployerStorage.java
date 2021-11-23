@@ -143,13 +143,13 @@ public class EmployerStorage implements IEmployerStorage {
     }
 
 
-    public int countEmployer() {
+    public Long countEmployer() {
         String sql = "select count(employers.id) from application.employers ";
         try (Connection con = ConnectionStorage.getInstance();
              Statement statement = con.createStatement();) {
             ResultSet resultSet = statement.executeQuery(sql);
             resultSet.next();
-            return resultSet.getInt(1);
+            return resultSet.getLong(1);
 
         } catch (SQLException e) {
             throw new IllegalStateException("Ошибка работы с базой данных", e);

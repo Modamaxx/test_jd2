@@ -94,16 +94,18 @@ public class HQLEmployerStorage implements IEmployerStorage {
     }
 
     @Override
-    public int countEmployer() {
+    public Long countEmployer() {
         Session session =sessionFactory.openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
-        CriteriaQuery<Employer> cr = cb.createQuery(Employer.class);
+        CriteriaQuery<Long> cr = cb.createQuery(Long.class);
         Root<Employer> root = cr.from(Employer.class);
-        cr.select(root);
+        cr.select(cb.count(root));
 
-        Query  query = session.createQuery(cr);
-        List<Employer> results = query.getResultList();
-        return results.size();
+        Query   query = session.createQuery(cr);
+        Long result= (Long) query.getSingleResult();
+
+        session.close();
+        return result;
     }
 
     @Override

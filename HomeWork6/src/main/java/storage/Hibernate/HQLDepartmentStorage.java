@@ -23,8 +23,7 @@ import java.util.Scanner;
 
 public class HQLDepartmentStorage implements IDepartmentStorage {
 
-    private final int NUMBER_DEPARTMENT = 5;
-    private final String PATH = "D:\\Java\\courses\\DZ\\Home\\HomeWork6\\src\\main\\resources\\FileForRead\\Departments.txt";
+
     private final SessionFactory sessionFactory;
 
     public HQLDepartmentStorage(SessionFactory sessionFactory) {
@@ -32,35 +31,11 @@ public class HQLDepartmentStorage implements IDepartmentStorage {
     }
 
     @Override
-    public void generationDepartments() throws IOException {
+    public void save(Department department) throws IOException {
         Session session = this.sessionFactory.openSession();
-
-        Path path = Paths.get(PATH);
-        Scanner scanner = new Scanner(path);
-        for (int i = 0; i < NUMBER_DEPARTMENT; i++) {
-            String name = scanner.next();
-            String parent = scanner.next();
-
-            if (parent.equals("Empty")) {
-                session.beginTransaction();
-                Department department = new Department(name);
-                session.save(department);
-                session.getTransaction().commit();
-
-                continue;
-            }
-
-            int idParent = getIdName(parent);
-
-            session.beginTransaction();
-
-            Department department = new Department(name, idParent);
-            session.save(department);
-            session.getTransaction().commit();
-
-
-        }
-
+        session.beginTransaction();
+        session.save(department);
+        session.getTransaction().commit();
     }
 
     @Override
@@ -83,13 +58,13 @@ public class HQLDepartmentStorage implements IDepartmentStorage {
 
     @Override
     public List<Department> pageDepartment() {
-        Session session =sessionFactory.openSession();
+        Session session = sessionFactory.openSession();
         CriteriaBuilder cb = session.getCriteriaBuilder();
         CriteriaQuery<Department> cr = cb.createQuery(Department.class);
         Root<Department> root = cr.from(Department.class);
         cr.select(root);
 
-        Query  query = session.createQuery(cr);
+        Query query = session.createQuery(cr);
         List<Department> results = query.getResultList();
         return results;
     }
@@ -98,13 +73,13 @@ public class HQLDepartmentStorage implements IDepartmentStorage {
     public List<Employer> cardDepartment(int id) {
         Session session = this.sessionFactory.openSession();
         session.beginTransaction();
-        CriteriaBuilder criteriaBuilder= sessionFactory.getCriteriaBuilder();
-        CriteriaQuery<Employer> cr= criteriaBuilder.createQuery(Employer.class);
-        Root <Employer> itemRoot=cr.from(Employer.class);
+        CriteriaBuilder criteriaBuilder = sessionFactory.getCriteriaBuilder();
+        CriteriaQuery<Employer> cr = criteriaBuilder.createQuery(Employer.class);
+        Root<Employer> itemRoot = cr.from(Employer.class);
 
-        cr.where(criteriaBuilder.equal(itemRoot.get("department"),id));
+        cr.where(criteriaBuilder.equal(itemRoot.get("department"), id));
 
-        Query  query= session.createQuery(cr);
+        Query query = session.createQuery(cr);
         List<Employer> resultList = query.getResultList();
 
         session.getTransaction().commit();

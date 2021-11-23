@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface IDepartmentStorage {
-    void generationDepartments() throws IOException;
+    void save(Department department) throws IOException;
     int getIdName(String name);
     List<Department> pageDepartment();
     List<Employer> cardDepartment(int id);

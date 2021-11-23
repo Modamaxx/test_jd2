@@ -1,0 +1,102 @@
+package com.example.demo.service.audit;
+
+import com.example.demo.model.Audit;
+import com.example.demo.model.Product;
+import com.example.demo.model.User;
+import com.example.demo.model.api.EssenceName;
+import com.example.demo.service.api.IAuditService;
+import com.example.demo.service.api.IProductService;
+import com.example.demo.service.api.IProfileService;
+import com.example.demo.service.api.IUserService;
+import com.example.security.UserHolder;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+
+@Aspect
+@Service
+public class ProductAuditService {
+    private final IAuditService auditService;
+    private final UserHolder userHolder;
+    private final IUserService userService;
+
+    public ProductAuditService(IAuditService auditService, UserHolder userHolder, IUserService userService) {
+        this.auditService = auditService;
+        this.userHolder = userHolder;
+        this.userService = userService;
+    }
+
+    @AfterReturning("execution(* com.example.demo.service.ProductService.save(..))")
+    public void save(JoinPoint joinPoint) {
+        try {
+            Object[] args = joinPoint.getArgs();
+            Product product = (Product) args[0];
+            Audit audit = new Audit();
+
+            audit.setDtCreate(product.getDataUpdate());
+            audit.setDescription("Продукт сохранен");
+            audit.setEssenceName(EssenceName.PRODUCT);
+            audit.setEssenceId(product.getId());
+
+            String login = userHolder.getAuthentication().getName();
+            User user = userService.findByLogin(login);
+            audit.setUser(user);
+
+            auditService.save(audit);
+
+        } catch (Throwable e) {
+            throw new IllegalArgumentException("Ошибка записи продукта в аудита");
+        }
+    }
+
+    @AfterReturning("execution(* com.example.demo.service.ProductService.update(..))")
+    public void update(JoinPoint joinPoint) {
+        try {
+            Object[] args = joinPoint.getArgs();
+            Product product = (Product) args[0];
+            Audit audit = new Audit();
+
+            audit.setDtCreate(product.getDataUpdate());
+            audit.setDescription("Продукт изменен");
+            audit.setEssenceName(EssenceName.PRODUCT);
+            audit.setEssenceId(product.getId());
+
+            String login = userHolder.getAuthentication().getName();
+            User user = userService.findByLogin(login);
+            audit.setUser(user);
+
+            auditService.save(audit);
+
+        } catch (Throwable e) {
+            throw new IllegalArgumentException("Ошибка изменение продукта в аудита");
+        }
+    }
+
+    @AfterReturning("execution(* com.example.demo.service.ProductService.delete(..))")
+    public void delete(JoinPoint joinPoint) {
+        try {
+            Object[] args = joinPoint.getArgs();
+            Long idProduct = (Long) args[0];
+
+            Audit audit = new Audit();
+
+            audit.setDtCreate(LocalDateTime.now());
+            audit.setDescription("Продукт удален");
+            audit.setEssenceName(EssenceName.PRODUCT);
+            audit.setEssenceId(idProduct);
+
+            String login = userHolder.getAuthentication().getName();
+            User user = userService.findByLogin(login);
+            audit.setUser(user);
+
+            auditService.save(audit);
+
+        } catch (Throwable e) {
+            throw new IllegalArgumentException("Ошибка удаление продукта в аудите");
+        }
+    }
+}

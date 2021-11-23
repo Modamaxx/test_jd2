@@ -14,7 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class DepartmentStorage implements IDepartmentStorage {
+public class DepartmentStorage /*implements IDepartmentStorage*/ {
     private static final DepartmentStorage instance = new DepartmentStorage();
 
     private final int NUMBER_DEPARTMENT = 5;

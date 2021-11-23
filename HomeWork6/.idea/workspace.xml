@@ -5,60 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61001add-e35b-45a9-9b73-dc66ed588eec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/DepartmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/StartAppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/restController/DepartmentRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/restController/EmployerRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/restController/PositionRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/registration.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/listeners/StartListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/listeners/StartListeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/DepartmentServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/EmployerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/EmployerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/PositionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/PositionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignInServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/servlets/SignUpServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/servlets/EmployerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/servlets/EmployerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dto/PageableFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dto/PageableFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CalculationsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLDepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLDepartmentStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLEmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/Hibernate/HQLEmployerStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/card/cardDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/card/cardDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/card/cardEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/card/cardEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/card/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/card/cardPosition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/page/pageDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pageDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/page/pageEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pageEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/page/pagePosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/page/pagePosition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/signIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/authorization.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/signUp.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/startApp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/startApp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/SQL/DepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/SQL/DepartmentStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/SQL/EmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/SQL/EmployerStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/api/IDepartmentStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/api/IDepartmentStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/api/IEmployerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/api/IEmployerStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/DepartmentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/EmployerServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/PositionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignInServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/controllers/servlets/SignUpServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/classes/model/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardPosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/card/cardPosition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageDepartment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageDepartment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pageEmployer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pagePosition.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/page/pagePosition.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signIn.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/signUp.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/startApp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/HomeWork6-1.0-SNAPSHOT/views/startApp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/DepartmentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/EmployerServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/PositionServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignInServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/servlets/SignUpServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Department.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/CalculationsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/DepartmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EmployerService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +71,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../проекты ильи/demo/demo" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -258,15 +221,6 @@
     <servers />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/service/CalculationsService.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="list.get(1)" />

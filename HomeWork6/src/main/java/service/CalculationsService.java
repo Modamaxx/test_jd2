@@ -50,7 +50,7 @@ public class CalculationsService implements ICalculationService {
     }
 
     public String pageCount(double limit) {
-        int countEmployers = employerStorage.countEmployer();
+        int countEmployers = Math.toIntExact(employerStorage.countEmployer());
         return String.valueOf((long) Math.ceil((double) countEmployers / limit));
     }
 

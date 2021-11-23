@@ -1,6 +1,6 @@
 package model.dto;
 
-public class PageableFilter {
+    public class PageableFilter {
     private int page;
     private int size;
     private ESortDirection sortDirection;

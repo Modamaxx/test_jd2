@@ -12,7 +12,7 @@ public interface IEmployerStorage {
     Employer get(int id);
     void generationEmployers(int[] arrDepartment, int[] arrPosition) throws IOException;
     List<Employer> page(PageableFilter filter);
-    int countEmployer();
+    Long countEmployer();
     List<Employer> pageFilter(EmployerSearchFilter filter);
 
 }

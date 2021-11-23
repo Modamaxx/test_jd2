@@ -37,7 +37,7 @@ public class EmployerController {
         this.calculationsService = calculationService;
     }
 
-    @RequestMapping(value = "authorization", method = RequestMethod.GET, produces = "text/html")
+    @RequestMapping(value = "/authorization", method = RequestMethod.GET, produces = "text/html")
     public String authorization(@RequestParam(value = "id", required = false) Integer id, Model model) {
         if (id != null) {
             Employer employer = employerService.get(id);
@@ -49,13 +49,16 @@ public class EmployerController {
         return "authorization";
     }
 
-    @RequestMapping(value = "registration", method = RequestMethod.GET, produces = "text/html")
+    @RequestMapping(value = "/registration", method = RequestMethod.GET, produces = "text/html")
     public String registration(Model model) throws IOException {
-
+        ArrayList<String> strPositions= employerService.readFilePositions();
+        ArrayList<String> strDepartments= employerService.readFileDepartments();
+        model.addAttribute("strPositions",strPositions);
+        model.addAttribute("strDepartments",strDepartments);
         return "registration";
     }
 
-    @RequestMapping(value = "page", method = RequestMethod.GET, produces = "text/html")
+    @RequestMapping(value = "/page", method = RequestMethod.GET, produces = "text/html")
     public String page(@RequestParam(value = "name", required = false) String name,
                                @RequestParam(value = "page", required = false) String page,
                                @RequestParam(value = "size", required = false) String size,
@@ -87,45 +90,4 @@ public class EmployerController {
         model.addAttribute("pageCount", pageCount);
         return "page/pageEmployer";
     }
-
-
-
-
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//
-//        String name = req.getParameter("name");
-//        String page = req.getParameter("page");
-//        String size = req.getParameter("size");
-//        String salaryOperator = req.getParameter("salary_operator");
-//        String salary = req.getParameter("salary");
-//        List<Employer> employers;
-//
-//        int page1 = page == null ? 1 : Integer.parseInt(page);
-//        int size1 = size == null ? 50 : Integer.parseInt(size);
-//
-//        if (name!=null || salary !=null) {
-//            EmployerSearchFilter filter = new EmployerSearchFilter(
-//                    name, EPredicateOperator.AND, salary, ESalaryOperator.valueOf(salaryOperator),
-//                    page1,
-//                    size1,
-//                    ESortDirection.ASC
-//            );
-//            employers = employerService.pageFilter(filter);
-//        } else {
-//            PageableFilter filter = new PageableFilter(
-//                    page1,
-//                    size1,
-//                    ESortDirection.ASC);
-//            employers = employerService.page(filter);
-//        }
-//
-//        String pageCount = calculationsService.pageCount(Double.parseDouble(size));
-//        req.setAttribute("employers", employers);
-//        req.setAttribute("page", page);
-//        req.setAttribute("size", size);
-//        req.setAttribute("pageCount", pageCount);
-//        req.getRequestDispatcher("/views/page/pageEmployer.jsp").forward(req, resp);
-//
-//    }
 }
